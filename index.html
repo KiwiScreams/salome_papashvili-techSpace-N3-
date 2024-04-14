@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Register Form</title>
+    <link rel="icon" type="img/x-icon" href="img/logo.jpg">
+</head>
+
+<body>
+    <div class="img-Container__div">
+        <a href="https://www.facebook.com/profile.php?id=61555700484256" target="_blank">
+        <img src="img/logo.jpg" alt="TechSpace__Logo"></a>
+    </div>
+    <div class="form__div">
+        <h1>TechSpace Register Form</h1>        <h3>Register with us to get more details</h3>
+        <form>
+            <div>
+                <label for="name">Name</label>
+            </div>
+            <div class="flex">
+                <input type="text" name="name" id="name" placeholder="First">
+                <input type="text" name="lastname" id="lastname" placeholder="Last">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+            </div>
+            <input type="number" name="number" id="phone" minlength="9" maxlength="12" placeholder="Phone Number">
+            <div>
+                <label for="email">Email</label>
+            </div>
+            <input type="email" name="email" id="email" placeholder="Email Address">
+            <br>
+            <br>
+            <br>
+            <p>What is your feature of TechSpace?</p>
+            <select name="select an option" id="select_Dropdown">
+                <option value="Student" style="padding: 20px;">Student</option>
+                <option value="FullJob">Job</option>
+                <option value="Learner">Learner</option>
+                <option value="Other">Other</option>
+            </select>
+            <div class="flex">
+                <div>
+                    <p>Would you recommended TechSpace to a friend?</p>
+                    <input type="radio" id="definitely" name="recommend">
+                    <label for="definitely">Definitely</label><br>
+                    <input type="radio" id="maybe" name="recommend">
+                    <label for="maybe">Maybe</label><br>
+                    <input type="radio" id="not_sure" name="recommend">
+                    <label for="not_sure">Not sure</label>
+                    <br>
+                    <br>
+                    <br>
+                    <p>Any comments or suggestions</p>
+                    <textarea name="comment" id="comment" cols="80" rows="8"></textarea>
+                </div>
+                <div>
+                    <p>What would you like to see improveer? (Check all that apply)</p>
+                    <input type="checkbox" id="frontend" name="frontend" value="frontend">
+                    <label for="frontend">Front-End Projeects</label><br>
+                    <input type="checkbox" id="backend" name="backend" value="backend">
+                    <label for="backend">Back-and Projeects</label><br>
+                    <input type="checkbox" id="data" name="data" value="data">
+                    <label for="data">Data visualization</label><br>
+                    <input type="checkbox" id="challenges" name="challenges" value="challenges">
+                    <label for="challenges">Challenges</label><br>
+                    <input type="checkbox" id="courses" name="courses" value="courses">
+                    <label for="courses">Additional courses</label><br>
+                    <input type="checkbox" id="forum" name="forum" value="forum">
+                    <label for="forum">Forum</label><br>
+                    <input type="checkbox" id="wiki" name="wiki" value="wiki">
+                    <label for="wiki">Wiki</label><br>
+                    <input type="checkbox" id="video" name="video" value="video">
+                    <label for="video">Videos</label><br>
+                    <input type="checkbox" id="getterRoom" name="getterRoom" value="getterRoom">
+                    <label for="getterRoom">Gitter help room</label><br>
+                </div>
+            </div>
+            <button type="submit">Sign Me Up</button>
+    </div>
+    </form>
+    </div>
+</body>
+</html>
